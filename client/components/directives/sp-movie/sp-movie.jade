@@ -1,0 +1,8 @@
+img(ng-src='{{icon}}')
+div {{movie.title}}:
+div {{movie.year}}
+div {{movie.mpaa}}
+div {{movie.runtime}}
+div {{movie.ratings.audeince_rating}}
+ul
+  li(ng-repeat='cast in movie.abridged_cast') {{cast.name}}

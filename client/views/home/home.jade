@@ -1,4 +1,14 @@
-h3 The MEAN Stack
-ul(ng-show='mean')
-  li(ng-repeat='technology in mean') {{technology}}
+h3 Home
+div(ng-repeat='person in people', sp-greeting, name='{{person.name}}', age='{{person.age}}')
 
+div(sp-clock, frequency='2000')
+//div(sp-clock, frequency='1000')
+//div(sp-clock, frequency='500')
+//div(sp-clock, frequency='250')
+//div(sp-clock, frequency='10')
+
+div(ng-repeat='symbol in symbols', sp-stock, symbol='{{symbol}}')
+
+div(sp-weather, zip='48917')
+
+div(sp-movie, title='beaches')
