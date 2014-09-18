@@ -1,7 +1,21 @@
 h3 Home
+
+div(sp-locate)
+
+div
+
+input(type='text', ng-model='title')
+button(ng-click='addMovie()') Add Movie
+
+div
+
+div(sp-movie, ng-repeat='title in titles', title='{{title}}', remove='delMovie($index)')
+
+
+
 div(ng-repeat='person in people', sp-greeting, name='{{person.name}}', age='{{person.age}}')
 
-div(sp-clock, frequency='2000')
+//div(sp-clock, frequency='2000')
 //div(sp-clock, frequency='1000')
 //div(sp-clock, frequency='500')
 //div(sp-clock, frequency='250')
@@ -9,8 +23,7 @@ div(sp-clock, frequency='2000')
 
 div(ng-repeat='symbol in symbols', sp-stock, symbol='{{symbol}}')
 
-div(sp-weather, zip='48917')
+div(sp-weather)
+div(sp-weather, zip='37211')
 
-div(sp-movie, title='beaches')
-div(sp-movie, title='The American President')
-div(sp-movie, title='Jaws')
+

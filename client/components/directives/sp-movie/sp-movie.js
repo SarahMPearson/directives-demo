@@ -14,7 +14,7 @@
 
     o.restrict    = 'A';
     o.templateUrl = '/components/directives/sp-movie/sp-movie.html';
-    o.scope       = {title:'@'};
+    o.scope       = {title:'@', remove:'&'};
     o.link        = function(scope, element, attrs){
                      };
     o.controller  = ['$scope', 'MovieApi', function($scope, MovieApi){

@@ -35,3 +35,14 @@ exports.logout = function(req, res){
   });
 };
 
+//exports.addMov = function(req, res){
+
+//};
+
+//exports.destroy = function(req, res){
+
+//};
+
+//exports.all = function(req, res){
+
+//};
